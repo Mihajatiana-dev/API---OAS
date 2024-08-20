@@ -1,0 +1,31 @@
+openapi: 3.0.3
+
+info:
+  title: STD23104 - TD1
+  version: 1.0.1
+
+servers:
+  - url: https://localhost.STD23104.com
+
+paths:
+  /customers:
+    get:
+      responses:
+        "200":
+          description: successful
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Customers"
+
+components:
+  schemas:
+    Customers:
+      type: object
+      properties:
+        name:
+          type: string
+        yearsOld:
+          type: integer
