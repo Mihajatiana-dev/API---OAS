@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: STD23104 - TD3
-  version: "1.0.5"
+  version: "2.0.0"
 servers:
   - url: https://localhost.std23104.com
 paths:
